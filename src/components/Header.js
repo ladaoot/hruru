@@ -9,15 +9,18 @@ import { useNavigate } from "react-router-dom";
 export default function Header(props) {
     const array = Array();
     const navigate = useNavigate();
+
+    var text = ""
     for (let index = 0; index < 4; index++) {
-        array.push(props.ind == index) 
+        array.push(props.ind == index)
     }
     return (
         <Stack direction={['column', 'row']} spacing='100px' justifyContent={'center'} bgColor={"#FFFFFF"}>
             <Logo />
             <HeadTabs select={array} />
             <Center height={'75px'} >
-                <Button width={'120px'}
+
+                <Button
                     height={'40px'}
                     borderRadius={'8px'}
                     borderColor='#EE7230'
@@ -25,8 +28,11 @@ export default function Header(props) {
                     fontFamily={'Open Sans'}
                     fontSize={24}
                     bg={'#FFFFFF'}
-                    onClick={async event => { navigate(`/login`) }}>
-                    Вход
+                    onClick={async event => { localStorage.getItem('jwt') ? navigate(`/cabinet/${localStorage.getItem('userType')}`) : navigate("/login") }}>
+                    {
+                        localStorage.getItem('jwt') ? "Личный кабинет" : "Вход"
+
+                    }
                 </Button>
             </Center>
 

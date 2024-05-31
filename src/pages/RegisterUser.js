@@ -32,11 +32,11 @@ export const RegisterUser = () => {
     const navigate = useNavigate();
     return (
         <ChakraProvider>
-            <Box backgroundColor={'#00000000'} marginTop={'5%'} marginEnd={'10%'} >
+            <Box bgImage={back} backgroundPosition={'absolute'} bgSize={'contain'}  marginTop={'5%'}  w={'1846px'} h={'839px'}  >
                 <Center>
-                    <Image objectFit='contain' src={pig} maxH={'600px'} marginRight={'20%'} />
+                <Image objectFit='contain' src={pig} maxH={'600px'} marginRight={'20%'} marginTop={'2%'} />
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <Box bgColor={'#FFFFFF'} borderWidth={'2px'} borderColor={'#EE7230'} borderRadius={'20px'} w={'750px'} h={'950px'}
+                        <Box bgColor={'#FFFFFF'} borderWidth={'2px'} borderColor={'#EE7230'} borderRadius={'20px'} w={'650px'} h={'755px'}
 
                         >
                             <Stack direction={'row'} marginTop={'10%'} >
@@ -52,7 +52,7 @@ export const RegisterUser = () => {
                                 borderLeftWidth={0}
                                 borderRightWidth={0}
                                 borderColor={'#EE7230'}
-                                marginTop={'10%'}
+                                marginTop={'5%'}
                                 id="name"  {...register('name', {})} />
                             <Input placeholder="Фамилия"
                                 w={'90%'}
@@ -62,7 +62,7 @@ export const RegisterUser = () => {
                                 borderLeftWidth={0}
                                 borderRightWidth={0}
                                 borderColor={'#EE7230'}
-                                marginTop={'10%'}
+                                marginTop={'5%'}
                                 id="surname"  {...register('surname', {})} />
                             <Input placeholder="Контактный телефон"
                                 w={'90%'}
@@ -72,7 +72,7 @@ export const RegisterUser = () => {
                                 borderLeftWidth={0}
                                 borderRightWidth={0}
                                 borderColor={'#EE7230'}
-                                marginTop={'10%'}
+                                marginTop={'5%'}
                                 id="phone"  {...register('phone', {})} />
                             <Input placeholder="Электронная почта"
                                 w={'90%'}
@@ -82,7 +82,7 @@ export const RegisterUser = () => {
                                 borderLeftWidth={0}
                                 borderRightWidth={0}
                                 borderColor={'#EE7230'}
-                                marginTop={'10%'}
+                                marginTop={'5%'}
                                 id="email"  {...register('email', {})} />
 
                             <InputGroup size='md'>
@@ -100,7 +100,7 @@ export const RegisterUser = () => {
                                     borderColor={'#EE7230'}
                                     id="password" {...register('password', {})}
                                 />
-                                <InputRightElement width='4.5rem' marginTop={'10%'} marginRight={'9%'}>
+                                <InputRightElement width='4.5rem' marginTop={'5%'} marginRight={'9%'}>
                                     <Button h='1.75rem' size='sm' onClick={handleClick} >
                                         {show ? 'Hide' : 'Show'}
                                     </Button>
@@ -112,7 +112,7 @@ export const RegisterUser = () => {
                                     type={show1 ? 'text' : 'password'}
                                     placeholder="Повтарите Пароль"
                                     w={'90%'}
-                                    marginTop={'10%'}
+                                    marginTop={'5%'}
                                     borderRadius={0}
                                     borderEndWidth={'2px'}
                                     borderTopWidth={0}
@@ -120,7 +120,7 @@ export const RegisterUser = () => {
                                     borderRightWidth={0}
                                     borderColor={'#EE7230'}
                                 />
-                                <InputRightElement width='4.5rem' marginTop={'10%'} marginRight={'9%'}>
+                                <InputRightElement width='4.5rem' marginTop={'5%'} marginRight={'9%'}>
                                     <Button h='1.75rem' size='sm' onClick={handleClick1} >
                                         {show1 ? 'Hide' : 'Show'}
                                     </Button>

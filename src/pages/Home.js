@@ -50,6 +50,8 @@ export const Home = () => {
         console.log(localStorage.getItem('findVacancy'))
         localStorage.removeItem('filterVacancy')
         localStorage.removeItem('findVacancy')
+        localStorage.removeItem('jwt')
+        localStorage.removeItem('userType')
 
         localStorage.setItem('vacancy', JSON.stringify(vacancy))
         console.log(localStorage.getItem('vacancy'))

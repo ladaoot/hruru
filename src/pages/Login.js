@@ -28,12 +28,12 @@ export const Login = () => {
     const handleClick = () => setShow(!show)
     const navigate = useNavigate();
     return (
-        <ChakraProvider>
-            <Box  marginTop={'5%'} marginEnd={'10%'} >
-                <Center>
-                    <Image objectFit='contain' src={pig} maxH={'600px'}  marginRight={'20%'}/>
+        <ChakraProvider >
+            <Box  marginTop={'5%'} bgImage={back} backgroundPosition={'absolute'} bgSize={'contain'} marginEnd={'10%'} w={'1846px'} h={'839px'} >
+                <Center >
+                    <Image objectFit='contain' src={pig} maxH={'600px'}  marginRight={'20%'} marginTop={'5%'}/>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <Box bgColor={'#FFFFFF'} borderWidth={'2px'} borderColor={'#EE7230'} borderRadius={'20px'} w={'650px'} h={'600px'} 
+                        <Box bgColor={'#FFFFFF'} borderWidth={'2px'} borderColor={'#EE7230'} borderRadius={'20px'} w={'650px'} h={'600px'} marginTop={'5%'}
                         
                         >
                             <Stack direction={'row'} marginTop={'10%'} >

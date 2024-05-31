@@ -52,6 +52,8 @@ export const Resume = () => {
         console.log(localStorage.getItem('findResume'))
         localStorage.removeItem('filterResume')
         localStorage.removeItem('findResume')
+        localStorage.setItem('jwt','rtrtrtrtr')
+        localStorage.setItem('userType', 'user')
 
         localStorage.setItem('resume', JSON.stringify(resume))
         console.log(localStorage.getItem('resume'))
