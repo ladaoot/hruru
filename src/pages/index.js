@@ -4,6 +4,7 @@ import { Login } from './Login'
 import { Register } from './Register'
 import { RegisterUser } from './RegisterUser'
 import { RegisterCompany } from './RegisterCompany'
+import { Resume } from './Resume'
 
 export const Pages = () => {
     return (
@@ -14,6 +15,7 @@ export const Pages = () => {
                 <Route path='/registration' element={<Register/>}/>
                 <Route path='/registration/user' element={<RegisterUser/>}/>
                 <Route path='/registration/company' element={<RegisterCompany/>}/>
+                <Route path='/resume' element={<Resume/>}/>
             </Routes>
         </BrowserRouter>
     )

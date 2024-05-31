@@ -77,7 +77,7 @@ export const Home = () => {
                             </AccordionButton>
                         </Stack>
                     </h2>
-                    <AccordionPanel pb={4} bgGradient={'linear( #EE723005 , #3C74A870 50%)'} >
+                    <AccordionPanel pb={4} bgGradient={'linear( #EE723000 , #3C74A870 50%)'} >
                         <FilterHookForm />
                     </AccordionPanel>
                 </AccordionItem>

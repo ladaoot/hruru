@@ -18,7 +18,7 @@ import {
 
 import Slide from "../moleculs/Slider";
 
-export default function FilterHookForm() {
+export default function FilterHookResume() {
     const {
         handleSubmit,
         register,
@@ -32,7 +32,7 @@ export default function FilterHookForm() {
             setTimeout(() => {
                 console.log(JSON.stringify(values, null, 2))
                 resolve()
-                localStorage.setItem('filterVacancy', JSON.stringify(values, null, 2))
+                localStorage.setItem('filterResume', JSON.stringify(values, null, 2))
             }, 3000)
         })
     }
@@ -43,7 +43,7 @@ export default function FilterHookForm() {
             <Stack justifyContent={'center'}  >
                 <FormControl isInvalid={errors.name}>
 
-                    <Stack direction={['column', 'row']} h={'45px'} justifyContent={'center'} >
+                    {/* <Stack direction={['column', 'row']} h={'45px'} justifyContent={'center'} >
                         <Tag borderColor={'#EE7230'}
                             bgColor={'#FFFFFF'}
                             textColor={'#EE7230'}
@@ -67,7 +67,7 @@ export default function FilterHookForm() {
                             marginLeft={'2%'}
 
                         />
-                    </Stack>
+                    </Stack> */}
                     <Stack direction={['column', 'row']} h={'45px'} justifyContent={'center'} marginTop={'2%'} >
                         <Tag borderColor={'#EE7230'}
                             bgColor={'#FFFFFF'}
